@@ -1,0 +1,221 @@
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 44px);
+}
+
+.right {
+  position: relative;
+  background: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card {
+  background-color: var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.loginbadge {
+  color: var(--text-primary);
+  font-size: 101px;
+  font-style: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.loginbadgepara {
+  margin-top: 2px;
+  margin-bottom: 16px;
+  font-size: 27px;
+  color: var(--text-primary);
+}
+.Login-label {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-terracotta);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  display: block;
+}
+.Login-label span {
+  color: var(--text-primary);
+}
+.login-input {
+  width: 100%;
+  background: var(--surface-light);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 14px 14px;
+  color: var(--text-primary);
+  font-size: 24px;
+  font-family: 'Geist', sans-serif;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+  margin-bottom: 18px;
+}
+.login-input:focus {
+  border-color: var(--accent-moss);
+}
+.login-toggle {
+  font-size: 20px;
+  color: var(--text-primary);
+  text-align: center;
+}
+.loginbtns {
+  width: 100%;
+  padding: 13px;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--accent-moss);
+  color: var(--surface-light);
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.loginbtns:hover {
+  background-color: #5C7A4C;
+}
+.loginbtnpara {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 5px;
+  color: var(--accent-terracotta);
+  font-size: 20px;
+}
+.line {
+  background-color: var(--border-light);
+  height: 2px;
+  width: 100%;
+  margin: 20px;
+  opacity: 0.7;
+}
+.logininfo {
+  color: var(--text-on-dark);
+  margin: 10px;
+  font-size: 25px;
+  border: 2px solid var(--accent-moss-bright);
+  padding: 14px;
+  border-radius: 20px;
+  background-color: var(--bg-dark);
+}
+.left {
+  position: relative;
+  background: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.auth-brand {
+  position: relative;
+  z-index: 2;
+  color: var(--text-on-dark);
+  max-width: 360px;
+  padding: 0 32px;
+}
+
+.auth-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.auth-headline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.auth-subtext {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(239,235,224,0.65);
+  margin-bottom: 40px;
+}
+
+.auth-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: rgba(239,235,224,0.85);
+}
+
+.auth-feature-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--accent-moss-bright);
+  color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.left::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(239,235,224,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239,235,224,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+@media (max-width: 430px) {
+.left{
+  display: none;
+}
+.card-container{
+  display: flex;
+    flex-direction: column;
+        padding: 26px;
+
+}
+.loginbadge {
+   
+    font-size: 63px;
+}
+.loginbadgepara {
+    
+    font-size: 20px;
+}
+
+.card
+
+ {
+    
+    padding: 45px;
+
+
+ }
+ .loginbtns {
+  
+    padding: 9px;
+    font-size: 30px;
+}
+.logininfo {
+  display: inline-block;
+      width: 100%;
+}
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600&family=Space+Mono:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    background: #fff7d3;
+    border-bottom: 1.5px solid rgba(171,21,9,0.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+.Logo{
+   font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #AB1509;
+    letter-spacing: -0.5px;
+}
+.Logo span { color: #1a0a09; }
+
+
+.navbtns{
+    display: flex;
+    gap: 20px;
+}
+.logutdiv{
+  background: none;
+    border: 1.5px solid #AB1509;
+    color: #AB1509;
+    padding: 9px 22px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+.logutdiv:hover{
+     background: #AB1509; color: #fff7d3; 
+}
+.signupdiv{
+  background: #AB1509;
+    color: #fff7d3;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+.signupdiv:hover{
+     background: #7a0e06; 
+}
