@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }) => {
         return
       }
       try {
-const res = await fetch('${import.meta.env.VITE_API_URL}/auth/verify', {
+const res = await fetch(`${import.meta.env.VITE_API_URL}/auth/verify`,{
           headers: { Authorization: `Bearer ${token}` }
         })
         const data = await res.json()
