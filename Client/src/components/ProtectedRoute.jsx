@@ -6,13 +6,13 @@ const ProtectedRoute = ({ children }) => {
 
   useEffect(() => {
     const verify = async () => {
-      const token = localStorage.getItem('adminToken')
+      const token = localStorage.getItem('usertoken')
       if (!token) {
         setStatus('invalid')
         return
       }
       try {
-const res = await fetch('https:localhost:8000/api/auth/verify', {
+const res = await fetch('${import.meta.env.VITE_API_URL}/auth/verify', {
           headers: { Authorization: `Bearer ${token}` }
         })
         const data = await res.json()

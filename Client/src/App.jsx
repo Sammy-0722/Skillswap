@@ -21,7 +21,7 @@ function App(){
           <Route path='/setupprofile' element={
             <ProtectedRoute>
             <SetupProfile/>
-            // </ProtectedRoute>
+            </ProtectedRoute>
             }/>
           <Route path ='/dashboard' element=
             {
