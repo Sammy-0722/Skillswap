@@ -68,8 +68,8 @@ const Login = () => {
                         <div className="loginbadge">{isRegister ? "Create Account " : "Welcome Back"}</div>
                         <div className="loginbadgepara">{isRegister ? "Join Thousand already swapping skiils " : "Login to your SkillSwap account"}</div>
                         <form onSubmit={handleSubmit}>
-                            {error && <div className="error-message">{error}</div>}
-                            {success && <div className="success-message">{success}</div>}
+                            {error && <p style={{color: 'red'}}>{error}</p>}
+{success && <p style={{color: 'green'}}>{success}</p>}
                             {isRegister ? <label className="Login-label">Full {<span>Name</span>}</label> : null}
                             {isRegister ? <input
                                 className="login-input"
