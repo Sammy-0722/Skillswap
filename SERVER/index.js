@@ -15,6 +15,8 @@ const messageRoutes = require('./routes/message');
 const Message = require('./models/message');
 const Session = require('./models/session');
 const app = express();
+const dns = require('dns');
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 app.use(cors({
     origin: 'http://localhost:5173',
