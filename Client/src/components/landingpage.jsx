@@ -48,10 +48,7 @@ function Landingpage(){
 
             <div className="ss-actions">
               <button className="ss-btn-primary"  onClick={()=>navigate('/login')}>Find Your Match →</button>
-              <button className="ss-btn-secondary" onClick={()=>navigate("/browse")}>
-                See how it works
-                <span className="ss-arrow">↗</span>
-              </button>
+              
             </div>
 
             <div className="ss-stats">
