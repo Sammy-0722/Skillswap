@@ -88,8 +88,8 @@ function Browser() {
             <nav className="navbar">
                 <div className="nav_logo">SkillSwap</div>
                 <ul className="nav_links">
-                    <li ><Link to="/dashboard">Dashboard</Link></li>
-                    <li><Link to="/requests">Requests</Link></li>
+                    <li  onClick={()=> navigate("/dashboard")}>Dashboard</li>
+                    <li onClick ={()=>navigate("/requests")}>Requests</li>
 
                     <li className="nav_avatar_wrapper">
                         <div className="nav_avatar" onClick={() => setShowDropdown(!showDropdown)}>
