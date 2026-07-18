@@ -2,7 +2,7 @@
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: calc(100vh - 44px);
+  min-height: 80vh;
 }
 
 .right {
@@ -24,7 +24,7 @@
 
 .loginbadge {
   color: var(--text-primary);
-  font-size: 101px;
+  font-size: 60px;
   font-style: bold;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
@@ -32,7 +32,7 @@
 .loginbadgepara {
   margin-top: 2px;
   margin-bottom: 16px;
-  font-size: 27px;
+  font-size: 20px;
   color: var(--text-primary);
 }
 .Login-label {
@@ -70,8 +70,8 @@
 }
 .loginbtns {
   width: 100%;
-  padding: 13px;
-  font-size: 40px;
+  padding: 8px;
+  font-size: 31px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: var(--accent-moss);
   color: var(--surface-light);
