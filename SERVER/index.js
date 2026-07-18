@@ -118,6 +118,6 @@ io.on("connection", (socket) => {
     });
 });
  
-server.listen(8000, () => {
+server.listen(process.env.CLIENT_URL, () => {
     console.log('server is running on the 8000 port');
 });
