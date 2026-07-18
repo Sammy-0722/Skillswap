@@ -547,6 +547,19 @@ body {
 }
 @media(maxwidth:430px){
   .navbar {
-    padding: 11px 19px 0;
+    padding: 0px;
+
 }
+.greeting{
+    font-size: 18px;
+}
+.aimatching {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    .cardcontainer{
+        width:469px;
+        height:111vh;
+    }
 }
