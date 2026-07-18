@@ -364,5 +364,12 @@ body {
   .ss-hero-right{
     display: none;
   }
-  
+  .ss-hero{
+        display: flex;
+    justify-content: center;
+
+  }
+  .ss-hero-left{
+    padding: 40px;
+  }
 }
