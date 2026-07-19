@@ -66,7 +66,7 @@ const Login = () => {
                 <div className="card">
                     <div className="cardadjustment">
                         <div className="loginbadge">{isRegister ? "Create Account " : "Welcome Back"}</div>
-                        <div className="loginbadgepara">{isRegister ? "Join Thousand already swapping skiils " : "Login to your SkillSwap account"}</div>
+                        <div className="loginbadgepara">{isRegister ? "Join Thousand already swapping skills " : "Login to your SkillSwap account"}</div>
                         <form onSubmit={handleSubmit}>
                             {error && <p style={{color: 'red'}}>{error}</p>}
 {success && <p style={{color: 'green'}}>{success}</p>}
@@ -81,7 +81,7 @@ const Login = () => {
                             <input
                                 className="login-input"
                                 type="email"
-                                placeholder="user@gamil.com"
+                                placeholder="user@gmail.com"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)} />
                             <label className="Login-label">Pas{<span>swo</span>}rd</label>
@@ -97,7 +97,7 @@ const Login = () => {
                             <div className="loginbtnpara">{isRegister ? "no account" : "login for free"} </div>
                             <section className="line"></section>
                             < p className="login-toggle">
-                                {isRegister ? "Already havve an account ?" : "  Dont have an account "}
+                                {isRegister ? "Already have an account ?" : "  Dont have an account "}
                                 <span onClick={() => { setIsRegister(!isRegister); setError(''); setSuccess('') }} className="logininfo">
                                     {isRegister ? '  signin  ' : "   Register  "}
                                 </span>
