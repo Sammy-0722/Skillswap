@@ -373,3 +373,22 @@ body {
     padding: 40px;
   }
 }
+@media(max-width: 350px){
+    .ss-h1{
+        font-size: 35px;
+    }
+    .ss-desc{
+      font-size: 10px;
+    }
+    .ss-btn-primary{
+      padding: 10px;
+    }
+    .ss-stat-value{
+          font-size: 19px;
+    padding: 5px;
+}
+    .ss-hero-left{
+      
+    margin-left: 16px;
+    }
+}

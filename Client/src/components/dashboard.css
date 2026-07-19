@@ -548,8 +548,15 @@ body {
 @media(maxwidth:430px){
   .navbar {
     padding: 0px;
+    
+
 
 }
+.nav_logo{
+    font-size: 18px;
+}
+
+
 .greeting{
     font-size: 18px;
 }
@@ -561,5 +568,14 @@ body {
     .cardcontainer{
         width:469px;
         height:111vh;
+    }
+}
+@media(maxwidth:350px){
+    .nav_logo{
+        font-size: 16px;
+    }
+    .nav_links{
+        font-size: 12px;
+    gap: 20px;
     }
 }

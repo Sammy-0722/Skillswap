@@ -216,7 +216,43 @@
     font-size: 30px;
 }
 .logininfo {
-  display: inline-block;
-      width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+.login-toggle{
+  display: flex;
+}
+}
+@media(max-width:350px) {
+  .loginbadge{
+      font-size: 30px;
+  }
+  .loginbadgepara{
+        font-size: 12px;
+  }
+  .Login-label{
+        font-size: 15px;
+  }
+  .login-input{
+        padding: 8px;
+    font-size: 12px;
+  }
+  .loginbtns{
+    padding: 5px;
+    font-size: 22px;
+  }
+  .card-container{
+        padding: 15px;
+  }
+  .logininfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .login-toggle{
+    display: flex;
+  }
 }
