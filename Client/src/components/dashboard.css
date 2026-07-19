@@ -30,6 +30,10 @@ body {
     color: var(--text-primary);
     margin: 0;
 }
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
 /* ---------- NAVBAR ---------- */
 .navbar {
@@ -545,32 +549,37 @@ body {
         padding: 32px 20px 60px;
     }
 }
-@media(maxwidth:430px){
+@media (max-width: 430px) {
   .navbar {
-    padding: 0px;
-    
-
-
-}
-.nav_logo{
+    padding: 12px 16px;
+  }
+  .nav_logo {
     font-size: 18px;
-}
-
-
-.greeting{
+  }
+  .greeting {
     font-size: 18px;
+  }
+  .aimatching {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .cardcontainer {
+    width: 100%;
+    padding: 24px 16px 60px;
+  }
 }
-.aimatching {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-    }
-    .cardcontainer{
-        width:469px;
-        height:111vh;
-    }
+
+@media (max-width: 350px) {
+  .nav_logo {
+    font-size: 16px;
+  }
+  .nav_links {
+    font-size: 12px;
+    gap: 20px;
+  }
 }
-@media(maxwidth:350px){
+@media(max-width:350px){
     .nav_logo{
         font-size: 16px;
     }
